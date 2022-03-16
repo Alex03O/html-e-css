@@ -1,0 +1,76 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.7;
+}
+.logo{
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 3, 66);
+    height: 8vh;
+}
+main{
+    background:url('imagens/game.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left:32px ;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu div{
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background-color: white;
+}
+@media(max-width:999px){
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: rgb(33, 3, 66);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-list.active{
+        transform: translateX(0);
+    }
+}
