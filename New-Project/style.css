@@ -78,11 +78,13 @@ a:hover{
         padding:10px 10px;
         cursor: pointer;
         gap: 10px;
+        background-color: #161F30;
+        color: white;
+        
     }
     #hamburger{
-        
         width: 20px;
-        border-top: 2px  solid black;
+        border-top: 2px solid white;
     }
     #hamburger::after, #hamburger::before{
         content: '';

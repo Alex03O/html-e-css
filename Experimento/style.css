@@ -37,24 +37,11 @@ header p{
     color:rgba(255, 255, 255, 0.651);
     text-align: center;
 }
-nav{
-    background-color: #034159;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    text-align: right;
-}
-nav a{
-    
-    color: #0CF25D;
-    padding:6px;
-    padding-bottom: 5px;
-    transition-duration: 0.4s;
-}
-nav a:hover{
-    background-color: var(--cor5);
-    color: var(--cor1);
-    border-radius: 5px;
 
+@media (max-width:640px) {
+    #menu{
+        display: flex;
+    }
 }
 main{
     max-width: 900px;
